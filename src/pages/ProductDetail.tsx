@@ -5,12 +5,14 @@ import { products } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
+import { useCart } from "@/contexts/CartContext";
 
 const sizes = ["XS", "S", "M", "L", "XL", "XXL", "XXXL"];
 
 const ProductDetail = () => {
   const { id } = useParams();
   const { toast } = useToast();
+  const { addToCart } = useCart();
   const [selectedSize, setSelectedSize] = useState("M");
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -29,6 +31,7 @@ const ProductDetail = () => {
     .slice(0, 5);
 
   const handleAddToCart = () => {
+    addToCart(product.id, selectedSize);
     toast({
       title: "Added to cart",
       description: `${product.name} (Size: ${selectedSize}) has been added to your cart.`,
@@ -59,7 +62,7 @@ const ProductDetail = () => {
               alt={product.name}
               className="w-full h-full object-cover"
             />
-            
+
             {/* Navigation arrows */}
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
               <button
@@ -104,7 +107,7 @@ const ProductDetail = () => {
             <h1 className="font-display text-4xl md:text-5xl font-bold text-foreground mb-4">
               {product.name}
             </h1>
-            
+
             <span className="inline-block price-tag w-fit mb-8">
               ${product.price.toFixed(2)} USD
             </span>

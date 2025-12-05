@@ -17,8 +17,7 @@ export const products: Product[] = [
     category: "Headwear",
     description: "A mysterious hood emanating dark energy from the void dimension.",
     images: [
-      "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=800&q=80",
-      "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=800&q=80"
+      "/products/voidwalker.png",
     ]
   },
   {
@@ -30,7 +29,6 @@ export const products: Product[] = [
     description: "Glowing cyberpunk wings that leave a trail of light.",
     images: [
       "/products/neonwings.png",
-      "/products/neonwings2.png"
     ]
   },
   {
@@ -42,7 +40,6 @@ export const products: Product[] = [
     description: "A legendary sword forged from cosmic stardust.",
     images: [
       "/products/galaxysword.png",
-      "/products/galaxysword2.png"
     ]
   },
   {
@@ -54,7 +51,6 @@ export const products: Product[] = [
     description: "Futuristic helmet with integrated HUD display.",
     images: [
       "/products/cyberhelmet.png",
-      "/products/cyberhelmet2.png"
     ]
   },
   {
@@ -66,7 +62,6 @@ export const products: Product[] = [
     description: "A flowing cape that merges with shadows.",
     images: [
       "/products/shadowcape.png",
-      "/products/shadowcape2.png"
     ]
   },
   {
@@ -78,7 +73,6 @@ export const products: Product[] = [
     description: "A royal crown embedded with rare crystals.",
     images: [
       "/products/crystalcrown.png",
-      "/products/crystalcrown2.png"
     ]
   },
   {
@@ -90,7 +84,6 @@ export const products: Product[] = [
     description: "A legendary phoenix companion that follows you.",
     images: [
       "/products/phoenixpet.png",
-      "/products/phoenixpet2.png"
     ]
   },
   {
@@ -102,7 +95,6 @@ export const products: Product[] = [
     description: "High-tech boots with plasma propulsion.",
     images: [
       "/products/plasma.png",
-      "/products/plasma2.png"
     ]
   },
   {
@@ -114,7 +106,6 @@ export const products: Product[] = [
     description: "An intimidating mask from the underworld.",
     images: [
       "/products/demonmask.png",
-      "/products/demonmask2.png"
     ]
   },
   {
@@ -126,7 +117,6 @@ export const products: Product[] = [
     description: "Ride a majestic dragon across the skies.",
     images: [
       "/products/dragonmount.png",
-      "/products/dragonmount2.png"
     ]
   },
   {
@@ -138,7 +128,6 @@ export const products: Product[] = [
     description: "A sparkling aura that surrounds your avatar.",
     images: [
       "/products/starlightaura.png",
-      "/products/starlightaura2.png"
     ]
   },
   {
@@ -150,7 +139,6 @@ export const products: Product[] = [
     description: "Channel the power of lightning.",
     images: [
       "/products/thunderstaff.png",
-      "/products/thunderstaff2.png"
     ]
   }
 ];

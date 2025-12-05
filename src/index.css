@@ -107,4 +107,26 @@
   .nav-link-active {
     @apply text-foreground;
   }
+
+  .marquee-container {
+    @apply flex overflow-hidden;
+  }
+
+  .marquee-content {
+    @apply flex gap-4 animate-marquee;
+  }
+
+  .marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
