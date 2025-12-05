@@ -8,13 +8,13 @@ const Footer = () => {
         <h3 className="font-display text-[8vw] md:text-[6vw] lg:text-[5vw] font-bold leading-none tracking-tighter text-primary mt-2">
           MARKETPLACE
         </h3>
-        
+
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end mt-12 pt-8 border-t border-border">
           <div className="flex flex-col gap-2 text-muted-foreground text-sm">
             <p>© 2024 Roblox Marketplace. All rights reserved.</p>
             <p>Premium Virtual Items & Accessories</p>
           </div>
-          
+
           <div className="flex gap-6 mt-6 md:mt-0">
             <a href="#" className="text-muted-foreground hover:text-foreground transition-colors text-sm">
               Privacy Policy

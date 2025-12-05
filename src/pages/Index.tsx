@@ -39,7 +39,7 @@ const Index = () => {
           </div>
 
           {/* Side Products */}
-          <div className="flex flex-col gap-4 h-[400px] lg:h-full">
+          <div className="flex flex-col gap-4 h-[550px] lg:h-550px">
             {sideProducts.map((product) => (
               <div
                 key={product.id}
